@@ -44,3 +44,30 @@ a {
     color-scheme: dark;
   }
 }
+
+.stripe{
+  width:100%;
+  padding:12px 0;
+
+  background: repeating-linear-gradient(
+    to right,
+    #E9D5C0 0 3px,
+    #F1E4D2 4px 12px
+  );
+
+  background-position:0 0;
+}
+
+@font-face {
+  font-family: "Nelphim";
+  src: url("/fonts/nelphim.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BreadleySans";
+  src: url("/fonts/breadley-sans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
