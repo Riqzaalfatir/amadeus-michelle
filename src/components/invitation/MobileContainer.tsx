@@ -5,7 +5,7 @@ const MobileContainer = () => {
   return (
     <div className="w-full min-h-screen flex justify-center bg-[#F6EEE1]">
 
-      <div className="relative w-full h-screen flex flex-col items-center
+      <div className="relative w-full min-h-screen flex flex-col items-center
       max-w-[420px] md:max-w-[520px] lg:max-w-[620px]">
 
         {/* Stripe Atas */}
