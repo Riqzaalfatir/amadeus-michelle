@@ -7,12 +7,12 @@ const LokasiSection = () => {
             <div className="max-w-4xl mx-auto px-4 text-center">
 
                 {/* Nama tempat */}
-                <h2 className="text-[#2E497C] text-[18px] uppercase font-nephilm ">
+                <h2 className="text-[#2E497C] text-[18px] uppercase font-nephilm tracking-[1.5px] leading-none">
                     SUDIRMAN GRAND BALLROOM
                 </h2>
 
                 {/* Alamat */}
-                <p className="text-[#C75376] pt-2 text-[16px] font-breadley">
+                <p className="text-[#C75376] pt-2 text-[16px] font-breadley tracking-[0.5px] leading-none">
                     Jln. Jendral Sudirman No. 620 Bandung
                 </p>
 
@@ -21,11 +21,11 @@ const LokasiSection = () => {
                     <Image
                         src={Ornament}
                         alt="ornament"
-                        width={360}
-                        height={110}
+                        width={320}
+                        height={90}
                         className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 object-contain"
                     />
-                    <button className="relative text-[#C85375] text-[14px] uppercase font-nephilm ">
+                    <button className="relative text-[#C85375] text-[14px] uppercase font-nephilm  ">
                         ARAHKAN KE LOKASI
                     </button>
                 </div>
@@ -44,7 +44,7 @@ const LokasiSection = () => {
                     </div>
 
                     {/* Divider */}
-                    <div className="w-[1px] h-12 bg-[#C75375]"></div>
+                    <div className="w-[1.5px] h-12 bg-[#C75375]"></div>
 
                     {/* Resepsi */}
                     <div className="text-center">

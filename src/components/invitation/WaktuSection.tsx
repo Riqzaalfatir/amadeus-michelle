@@ -51,7 +51,7 @@ const SaveTheDateSection = () => {
         {/* Title */}
         <motion.h2
           variants={fadeUp}
-          className="text-[#E0A786] text-[18px] uppercase py-[27px]font-nephilm tracking-wide"
+          className="text-[#E0A786] text-[18px] uppercase py-[27px] font-nephilm pt-[28px] relaxed tracking-[1px]"
         >
           Sabtu, 24 Januari 2026
         </motion.h2>
@@ -59,7 +59,7 @@ const SaveTheDateSection = () => {
         {/* Gallery */}
         <motion.div
           variants={container}
-          className="flex gap-4 mb-[38px]"
+          className="flex gap-4 mb-[40px]"
         >
           {[1, 2, 3, 4].map((item) => (
             <motion.div

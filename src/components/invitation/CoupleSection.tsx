@@ -57,7 +57,7 @@ const CoupleSection = () => {
         {/* Quote */}
         <motion.p
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] pt-[15px] max-w-[260px] leading-relaxed font-breadley"
+          className="text-[#C75376] text-[16px] pt-[15px] max-w-[260px] font-breadley tracking-[1px] "
         >
           Because you have shared in our lives
           by your friendship and love
@@ -81,7 +81,7 @@ const CoupleSection = () => {
         {/* Parents Intro */}
         <motion.p
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] font-breadley pt-[103px]"
+          className="text-[#C75376] text-[16px] font-breadley pt-[100px]"
         >
           together with their parents
         </motion.p>
@@ -89,7 +89,7 @@ const CoupleSection = () => {
         {/* Parents */}
         <motion.div
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] uppercase font-breadley leading-relaxed pt-[27px]"
+          className="text-[#C75376] text-[16px] uppercase font-breadley leading-relaxed pt-[27px] font-semibold tracking-[1px]"
         >
           <p>MR. JOHANNES ADI PURNAMA PUTRA ST. MT</p>
           <p>& MRS. FANNY KURNIAWATI</p>
@@ -97,7 +97,7 @@ const CoupleSection = () => {
 
         <motion.div
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] uppercase font-breadley leading-relaxed pt-[38px]"
+          className="text-[#C75376] text-[16px] uppercase font-breadley leading-relaxed pt-[38px] font-semibold tracking-[1px]"
         >
           <p>MR. JOHANNES ADI PURNAMA PUTRA ST. MT</p>
           <p>& MRS. FANNY KURNIAWATI</p>
@@ -106,9 +106,9 @@ const CoupleSection = () => {
         {/* Invitation */}
         <motion.p
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] max-w-[270px] leading-relaxed font-breadley py-[72px]"
+          className="text-[#C75376] text-[16px] max-w-[300px] leading-relaxed font-breadley py-[72px] tracking-[1px]"
         >
-          Request the pleasure of your company
+          Request the pleasure of your company <br />
           to celebrate the marriage of their children
         </motion.p>
       </motion.div>
