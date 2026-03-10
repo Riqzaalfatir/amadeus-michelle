@@ -1,7 +1,5 @@
 "use client"
 
-import { useEffect } from "react"
-import AOS from "aos"
 import Image from "next/image"
 import HeroKiri from "@/assets/HeroKiri.png"
 import MobileContainer from "./MobileContainer"
@@ -17,20 +15,6 @@ import FooterSection from "./FooterSection"
 
 export default function DekstopLayout() {
 
-  useEffect(() => {
-    const container = document.querySelector(".scroll-container")
-
-    const handleScroll = () => {
-      AOS.refresh()
-    }
-
-    container?.addEventListener("scroll", handleScroll)
-
-    return () => {
-      container?.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
-
   return (
     <div className="flex h-screen overflow-hidden bg-black">
 
@@ -44,7 +28,7 @@ export default function DekstopLayout() {
         />
       </div>
 
-     <div className="w-full lg:w-[420px] h-screen overflow-y-auto bg-[#EFE6D8]">
+      <div className="w-full lg:w-[420px] h-screen overflow-y-auto bg-[#EFE6D8]">
         <MobileContainer />
         <CoupleSection />
         <WaktuSection />

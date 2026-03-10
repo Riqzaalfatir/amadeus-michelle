@@ -1,7 +1,44 @@
+"use client";
+
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import HeroKanan from "@/assets/HeroKanan.png";
 
 const MobileContainer = () => {
+  // Variants untuk animasi teks
+  const textVariant: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: (custom: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: custom * 0.3,
+        duration: 0.8,
+        ease: [0.25, 0.1, 0.25, 1], // cubic-bezier untuk TS
+      },
+    }),
+  };
+
+  // Variants untuk animasi gambar
+  const imageVariant: Variants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] },
+    },
+  };
+
+  // Variants untuk stripe bawah
+  const stripeVariant: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 1.5 },
+    },
+  };
+
   return (
     <div className="w-full h-screen flex justify-center bg-[#F6EEE1]">
 
@@ -15,40 +52,76 @@ const MobileContainer = () => {
         <div className="flex-1 flex flex-col items-center justify-center">
 
           <div className="text-center">
-            <h1 className="font-nephilm text-[48px] tracking-wide text-[#2E497C]">
+            <motion.h1
+              className="font-nephilm text-[48px] tracking-wide text-[#2E497C]"
+              custom={0}
+              initial="hidden"
+              animate="visible"
+              variants={textVariant}
+            >
               AMADEUS
-            </h1>
+            </motion.h1>
 
-            <p className="text-[#E0A786] font-breadley text-[31px]">
+            <motion.p
+              className="text-[#E0A786] font-breadley text-[31px]"
+              custom={1}
+              initial="hidden"
+              animate="visible"
+              variants={textVariant}
+            >
               and
-            </p>
+            </motion.p>
 
-            <h1 className="font-nephilm text-[48px] tracking-wide text-[#2E497C]">
+            <motion.h1
+              className="font-nephilm text-[48px] tracking-wide text-[#2E497C]"
+              custom={2}
+              initial="hidden"
+              animate="visible"
+              variants={textVariant}
+            >
               MICHELLE
-            </h1>
+            </motion.h1>
           </div>
 
-          <Image
-            src={HeroKanan}
-            alt="Hero"
-            width={300}
-            height={300}
-            className="object-contain w-[260px] md:w-[420px] lg:w-[340px]"
-            priority
-          />
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={imageVariant}
+            className="mt-4"
+          >
+            <Image
+              src={HeroKanan}
+              alt="Hero"
+              width={300}
+              height={300}
+              className="object-contain w-[260px] md:w-[420px] lg:w-[340px]"
+              priority
+            />
+          </motion.div>
 
-          <div className="mt-[12px] font-breadley text-[21px] tracking-[3px] text-[#c79a73]">
+          <motion.div
+            className="mt-[12px] font-breadley text-[21px] tracking-[3px] text-[#c79a73]"
+            custom={3}
+            initial="hidden"
+            animate="visible"
+            variants={textVariant}
+          >
             24.01.26
-          </div>
+          </motion.div>
 
         </div>
 
         {/* Stripe Bawah */}
-        <div className="stripe w-full flex items-center justify-center">
+        <motion.div
+          className="stripe w-full flex items-center justify-center"
+          initial="hidden"
+          animate="visible"
+          variants={stripeVariant}
+        >
           <span className="text-[#2E497C] px-4 py-1.5 text-[12px] tracking-[2px] font-breadley">
             #AureliaFernandoWedding
           </span>
-        </div>
+        </motion.div>
 
       </div>
     </div>
