@@ -44,7 +44,7 @@ export default function DekstopLayout() {
         />
       </div>
 
-     <div className="scroll-area w-full lg:w-[420px] h-screen overflow-y-auto bg-[#EFE6D8]">
+     <div className="w-full lg:w-[420px] h-screen overflow-y-auto bg-[#EFE6D8]">
         <MobileContainer />
         <CoupleSection />
         <WaktuSection />
