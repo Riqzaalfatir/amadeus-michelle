@@ -72,7 +72,7 @@ const ReservasiSection = () => {
 
                 {/* Description */}
                 <motion.p
-                  className="text-[#C75376] text-[16px] font-breadley pt-[11px] tracking-[1px]"
+                  className="text-[#C75376] text-[15px] md:text-[16px] font-breadley pt-[11px] tracking-[1px]"
                   variants={fadeUp}
                 >
                     Mohon konfirmasi kehadiran Bapak/Ibu di acara
