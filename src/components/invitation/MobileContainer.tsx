@@ -61,9 +61,6 @@ const MobileContainer = () => {
 
         {/* Stripe Bawah */}
         <div 
-        data-aos="fade-up"
-        data-aos-delay="900"
-        data-aos-anchor-placement="top-bottom"
         className="stripe absolute bottom-0 left-0 right-0 flex items-center justify-center">
           <span className="text-[#2E497C] px-4 py-1.5 text-[12px] tracking-[2px] font-breadley">
             #AureliaFernandoWedding
