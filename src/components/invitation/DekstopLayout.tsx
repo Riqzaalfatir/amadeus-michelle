@@ -1,3 +1,7 @@
+"use client"
+
+import { useEffect } from "react"
+import AOS from "aos"
 import Image from "next/image"
 import HeroKiri from "@/assets/HeroKiri.png"
 import MobileContainer from "./MobileContainer"
@@ -11,12 +15,26 @@ import PesanSection from "./PesanSection"
 import TerimakasihSection from "./TerimakasihSection"
 import FooterSection from "./FooterSection"
 
-
 export default function DekstopLayout() {
+
+  useEffect(() => {
+    const container = document.querySelector(".scroll-container")
+
+    const handleScroll = () => {
+      AOS.refresh()
+    }
+
+    container?.addEventListener("scroll", handleScroll)
+
+    return () => {
+      container?.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   return (
     <div className="flex h-screen overflow-hidden bg-black">
 
-      <div className="hidden lg:block flex-1 relative">
+      <div className="hidden xl:block flex-1 relative">
         <Image
           src={HeroKiri}
           alt="Hero"
@@ -26,7 +44,7 @@ export default function DekstopLayout() {
         />
       </div>
 
-      <div className="w-full lg:w-[420px] h-screen overflow-y-auto bg-[#EFE6D8]">
+     <div className="scroll-area w-full lg:w-[420px] h-screen overflow-y-auto bg-[#EFE6D8]">
         <MobileContainer />
         <CoupleSection />
         <WaktuSection />
