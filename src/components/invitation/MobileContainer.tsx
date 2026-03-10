@@ -5,7 +5,7 @@ const MobileContainer = () => {
   return (
     <div className="w-full min-h-screen flex justify-center bg-[#F6EEE1]">
 
-      <div className="relative w-full min-h-screen flex flex-col items-center
+      <div className="relative w-full h-screen flex flex-col items-center
       max-w-[420px] md:max-w-[520px] lg:max-w-[620px]">
 
         {/* Stripe Atas */}
@@ -20,7 +20,7 @@ const MobileContainer = () => {
             <h1 
             data-aos="fade-down"
             data-aos-delay="150"
-            className="font-nephil text-[48px] tracking-wide text-[#2E497C]">
+            className="font-nephilm text-[48px] tracking-wide text-[#2E497C]">
               AMADEUS
             </h1>
 
