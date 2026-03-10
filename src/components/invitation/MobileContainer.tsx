@@ -40,16 +40,16 @@ const MobileContainer = () => {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center bg-[#F6EEE1]">
+    <div className="w-full min-h-screen flex justify-center bg-[#F6EEE1]">
 
-      <div className="w-full h-screen flex flex-col items-center
+      <div className="w-full flex flex-col items-center
       max-w-[420px] md:max-w-[520px] lg:max-w-[620px]">
 
         {/* Stripe Atas */}
         <div className="stripe w-full" />
 
         {/* Konten Tengah */}
-        <div className="flex-1 flex flex-col items-center justify-center">
+        <div className="flex-1 flex flex-col items-center justify-center py-10">
 
           <div className="text-center">
             <motion.h1
@@ -100,7 +100,7 @@ const MobileContainer = () => {
           </motion.div>
 
           <motion.div
-            className="mt-[20px] font-breadley text-[21px] tracking-[3px] text-[#c79a73]"
+            className="mt-[12px] font-breadley text-[21px] tracking-[3px] text-[#c79a73]"
             custom={3}
             initial="hidden"
             animate="visible"
