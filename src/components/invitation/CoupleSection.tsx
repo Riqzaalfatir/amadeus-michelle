@@ -65,7 +65,7 @@ const CoupleSection = () => {
 
         {/* Couple Names */}
         <motion.div variants={fadeUp} className="pt-[102px]">
-          <h1 className="font-nelphim text-[42px] tracking-wide text-[#2E497C]">
+          <h1 className="font-nephilm  text-[42px] tracking-wide text-[#2E497C]">
             AMADEUS
           </h1>
 
@@ -73,7 +73,7 @@ const CoupleSection = () => {
             and
           </p>
 
-          <h1 className="font-nelphim text-[42px] tracking-wide text-[#2E497C]">
+          <h1 className="font-nephilm  text-[42px] tracking-wide text-[#2E497C]">
             MICHELLE
           </h1>
         </motion.div>

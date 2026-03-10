@@ -16,13 +16,13 @@ const ReservasiSection = () => {
                         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[190px] object-contain"
                     />
 
-                    <h2 className="relative text-[#C85375] uppercase text-[14px] font-nelphim">
+                    <h2 className="relative text-[#C85375] uppercase text-[14px] font-nephilm ">
                         RESERVATION
                     </h2>
                 </div>
 
                 {/* Guest Name */}
-                <h3 className="text-[#2E497C] text-[18px] font-nelphim uppercase pt-[60px]">
+                <h3 className="text-[#2E497C] text-[18px] font-nephilm  uppercase pt-[60px]">
                     Guest Name & Fam
                 </h3>
 

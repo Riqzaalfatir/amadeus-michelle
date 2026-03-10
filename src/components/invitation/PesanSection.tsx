@@ -38,7 +38,7 @@ const PesanSection = () => {
         <section className='w-full bg-[repeating-linear-gradient(90deg,#E3CDB6_0px,#E3CDB6_3px,#F0E1D0_3px,#F0E1D0_12px)] py-[50px]'>
             <div className="max-w-7xl mx-auto px-4 text-center flex flex-col items-center">
 
-                <h2 className='text-[#2E497C] text-[24px] font-nelphim uppercase'>
+                <h2 className='text-[#2E497C] text-[24px] font-nephilm uppercase'>
                     Pesan Pribadi
                 </h2>
 
@@ -84,7 +84,7 @@ const PesanSection = () => {
                     {Pesan.map((item, index) => (
                         <div key={index} className="text-center">
 
-                            <h3 className="text-[#2E497C] text-[14px] font-nelphim uppercase">
+                            <h3 className="text-[#2E497C] text-[14px] font-nephilm uppercase">
                                 {item.nama}
                             </h3>
 

@@ -20,7 +20,7 @@ const MobileContainer = () => {
             <h1 
             data-aos="fade-down"
             data-aos-delay="150"
-            className="font-nelphim  text-[48px] tracking-wide text-[#2E497C]">
+            className="font-nephilm text-[48px] tracking-wide text-[#2E497C]">
               AMADEUS
             </h1>
 
@@ -34,7 +34,7 @@ const MobileContainer = () => {
             <h1 
             data-aos="fade-down"
             data-aos-delay="450"
-            className="font-nelphim text-[48px] tracking-wide text-[#2E497C]">
+            className="font-nephilm text-[48px] tracking-wide text-[#2E497C]">
               MICHELLE
             </h1>
           </div>

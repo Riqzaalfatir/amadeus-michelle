@@ -7,7 +7,7 @@ const LokasiSection = () => {
             <div className="max-w-4xl mx-auto px-4 text-center">
 
                 {/* Nama tempat */}
-                <h2 className="text-[#2E497C] text-[18px] uppercase font-nelphim">
+                <h2 className="text-[#2E497C] text-[18px] uppercase font-nephilm ">
                     SUDIRMAN GRAND BALLROOM
                 </h2>
 
@@ -25,7 +25,7 @@ const LokasiSection = () => {
                         height={110}
                         className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 object-contain"
                     />
-                    <button className="relative text-[#C85375] text-[14px] uppercase font-nelphim">
+                    <button className="relative text-[#C85375] text-[14px] uppercase font-nephilm ">
                         ARAHKAN KE LOKASI
                     </button>
                 </div>
@@ -38,7 +38,7 @@ const LokasiSection = () => {
                         <p className="text-[#C85375] text-[14px] font-breadley">
                             PEMBERKATAN
                         </p>
-                        <p className="text-[#2E497C] text-[21px] font-nelphim">
+                        <p className="text-[#2E497C] text-[21px] font-nephilm ">
                             15.00 <span className="text-[8px]">WIB</span>
                         </p>
                     </div>
@@ -51,7 +51,7 @@ const LokasiSection = () => {
                         <p className="text-[#C85375] text-[14px] font-breadley">
                             RESEPSI
                         </p>
-                        <p className="text-[#2E497C] text-[21px] font-nelphim">
+                        <p className="text-[#2E497C] text-[21px] font-nephilm ">
                             18.00 <span className="text-[8px]">WIB</span>
                         </p>
                     </div>

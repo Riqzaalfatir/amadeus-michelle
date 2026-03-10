@@ -20,7 +20,7 @@ const TerimakasihSection = () => {
 
                 {/* TEXT */}
                 <div className="max-w-[420px]">
-                    <h2 className="text-[#2E497C] text-[28px] font-nelphim uppercase">
+                    <h2 className="text-[#2E497C] text-[28px] font-nephilm  uppercase">
                         Terima Kasih
                     </h2>
 
