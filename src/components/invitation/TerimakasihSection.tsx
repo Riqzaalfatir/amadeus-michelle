@@ -20,11 +20,11 @@ const TerimakasihSection = () => {
 
                 {/* TEXT */}
                 <div className="max-w-[420px]">
-                    <h2 className="text-[#2E497C] text-[28px] font-nephilm  uppercase">
+                    <h2 className="text-[#2E497C] text-[28px] font-nephilm  uppercase tracking-[1px]">
                         Terima Kasih
                     </h2>
 
-                    <p className="text-[#C75376] text-[14px] font-breadley mt-4 leading-relaxed">
+                    <p className="text-[#C75376] text-[14px] font-breadley mt-4 leading-relaxed tracking-[1px] ">
                         Semoga Anda berkenan untuk hadir dan menikmati rangkaian acara
                         pada hari bahagia kami.
                     </p>

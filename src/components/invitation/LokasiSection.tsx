@@ -25,7 +25,7 @@ const LokasiSection = () => {
                         height={90}
                         className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 object-contain"
                     />
-                    <button className="relative text-[#C85375] text-[14px] uppercase font-nephilm  ">
+                    <button className="relative text-[#C85375] text-[14px] uppercase font-nephilm tracking-[1px] ">
                         ARAHKAN KE LOKASI
                     </button>
                 </div>

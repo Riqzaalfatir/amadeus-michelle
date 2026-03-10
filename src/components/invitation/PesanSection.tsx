@@ -38,11 +38,11 @@ const PesanSection = () => {
         <section className='w-full bg-[repeating-linear-gradient(90deg,#E3CDB6_0px,#E3CDB6_3px,#F0E1D0_3px,#F0E1D0_12px)] py-[50px]'>
             <div className="max-w-7xl mx-auto px-4 text-center flex flex-col items-center">
 
-                <h2 className='text-[#2E497C] text-[24px] font-nephilm uppercase'>
+                <h2 className='text-[#2E497C] text-[24px] font-nephilm uppercase tracking-[1px]'>
                     Pesan Pribadi
                 </h2>
 
-                <h4 className='text-[#C75376] text-[16px] font-breadley pt-[8px]'>
+                <h4 className='text-[#C75376] text-[16px] font-breadley  tracking-[1px]'>
                     Tinggalkan pesan dan harapan untuk kami
                 </h4>
 
@@ -57,7 +57,7 @@ const PesanSection = () => {
                     className='p-3 h-[240px] w-[341px] bg-white/60 rounded-md mt-[15px]'
                 />
 
-                <p className='text-[#C75376] text-[16px] font-breadley mt-[28px]'>
+                <p className='text-[#C75376] text-[16px] font-breadley mt-[28px] tracking-[1px] leading-none'>
                     Tambah foto atau video?
                 </p>
 
@@ -77,18 +77,18 @@ const PesanSection = () => {
 
                 </label>
 
-                <button className="bg-[#2E497C] py-2 px-10 text-white rounded-md text-[14px] font-breadley mt-[25px]">Kirim Pesan</button>
+                <button className="bg-[#2E497C] py-2 px-10 text-white rounded-md text-[14px] font-breadley mt-[25px] tracking-[1px]">Kirim Pesan</button>
 
-                <div className="w-[341px] bg-[#E9D5C0] rounded-lg mt-[40px] pt-[33px] pb-[50px] flex flex-col gap-8">
+                <div className="w-[341px] bg-[#E9D5C0] rounded-lg mt-[70px] pt-[33px] pb-[50px] flex flex-col gap-8">
 
                     {Pesan.map((item, index) => (
                         <div key={index} className="text-center">
 
-                            <h3 className="text-[#2E497C] text-[14px] font-nephilm uppercase">
+                            <h3 className="text-[#2E497C] text-[14px] font-nephilm uppercase tracking-[1px]">
                                 {item.nama}
                             </h3>
 
-                            <p className="text-[#C75376] text-[14px] font-breadley mt-2 max-w-[280px] mx-auto">
+                            <p className="text-[#C75376] text-[14px] font-breadley mt-2 max-w-[400px] mx-auto tracking-[1px]">
                                 {item.pesan}
                             </p>
 
