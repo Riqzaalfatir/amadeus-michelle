@@ -3,7 +3,7 @@ import HeroKanan from "@/assets/HeroKanan.png";
 
 const MobileContainer = () => {
   return (
-    <div className="w-full min-h-screen flex justify-center bg-[#F6EEE1]">
+    <div className="w-full h-screen flex justify-center bg-[#F6EEE1]">
 
       <div className="relative w-full min-h-screen flex flex-col items-center
       max-w-[420px] md:max-w-[520px] lg:max-w-[620px]">
@@ -51,8 +51,6 @@ const MobileContainer = () => {
           />
 
           <div 
-          data-aos="fade-up"
-          data-aos-delay="750"
           className="mt-[12px] md:mt-[16px] font-breadley text-[21px] leading-[100%] tracking-[3px] text-center text-[#c79a73]">
             24.01.26
           </div>
