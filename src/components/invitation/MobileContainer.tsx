@@ -49,7 +49,7 @@ const MobileContainer = () => {
         <div className="stripe w-full" />
 
         {/* Konten Tengah */}
-        <div className="flex-1 flex flex-col items-center justify-center py-10">
+        <div className="flex flex flex-col items-center justify-center py-10">
 
           <div className="text-center">
             <motion.h1
