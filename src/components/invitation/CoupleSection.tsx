@@ -10,8 +10,8 @@ const container: Variants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.35,
-      delayChildren: 0.5,
+      staggerChildren: 0.8, // elemen muncul slow satu per satu
+      delayChildren: 0.6,   // animasi mulai lebih lambat
     },
   },
 };
@@ -22,8 +22,8 @@ const fadeUp: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
-      ease: "easeOut",
+      duration: 1.8, // lebih lambat
+      ease: [0.22, 1, 0.36, 1], // dreamy cubic-bezier
     },
   },
 };

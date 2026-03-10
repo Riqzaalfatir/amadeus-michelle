@@ -12,8 +12,8 @@ const MobileContainer = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: custom * 0.5,
-        duration: 1.4,
+        delay: custom * 0.7,
+        duration: 2,
         ease: [0.22, 1, 0.36, 1], // cubic-bezier untuk TS
       },
     }),
@@ -21,11 +21,11 @@ const MobileContainer = () => {
 
   // Variants untuk animasi gambar
   const imageVariant: Variants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, scale: 1.5 },
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] },
+      transition: { duration: 1.5, ease: [0.25, 0.1, 0.25, 1] },
     },
   };
 
@@ -35,7 +35,7 @@ const MobileContainer = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 1.5 },
+      transition: { duration: 1.2, ease: [0.25, 0.1, 0.25, 1], delay: 1.5 },
     },
   };
 
@@ -45,7 +45,7 @@ const MobileContainer = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 },
+      transition: { duration: 1.2, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 },
     },
   };
 
