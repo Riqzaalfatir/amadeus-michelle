@@ -47,8 +47,8 @@ a {
 }
 
 .stripe{
-  height:40px;
-  background:red;
+  width:100%;
+  padding:12px 0;
 
   background: repeating-linear-gradient(
     to right,
