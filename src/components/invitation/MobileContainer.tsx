@@ -3,9 +3,9 @@ import HeroKanan from "@/assets/HeroKanan.png";
 
 const MobileContainer = () => {
   return (
-    <div className="w-full min-h-screen flex justify-center bg-[#F6EEE1]">
+    <div className="w-full h-screen flex justify-center bg-[#F6EEE1]">
 
-      <div className="relative w-full min-h-screen flex flex-col items-center
+      <div className="relative w-full h-screen flex flex-col items-center
       max-w-[420px] md:max-w-[520px] lg:max-w-[620px]">
 
         {/* Stripe Atas */}
@@ -14,7 +14,7 @@ const MobileContainer = () => {
         data-aos-delay="50"
         className="stripe absolute top-0 left-0 right-0" />
 
-        <div className="pt-[60px] md:pt-[100px] lg:pt-[80px] pb-[80px] md:pb-[100px] lg:pb-[120px] flex flex-col items-center">
+        <div className="pt-[30px] md:pt-[100px] lg:pt-[80px] pb-[110px] md:pb-[100px] lg:pb-[120px] flex flex-col items-center">
 
           <div className="text-center">
             <h1 
