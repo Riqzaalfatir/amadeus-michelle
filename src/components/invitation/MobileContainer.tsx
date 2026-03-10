@@ -100,7 +100,7 @@ const MobileContainer = () => {
           </motion.div>
 
           <motion.div
-            className="mt-[12px] font-breadley text-[21px] tracking-[3px] text-[#c79a73]"
+            className="mt-[12px] mb-[20px] font-breadley text-[21px] tracking-[3px] text-[#c79a73]"
             custom={3}
             initial="hidden"
             animate="visible"
