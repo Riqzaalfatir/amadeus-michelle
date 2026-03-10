@@ -12,9 +12,9 @@ const MobileContainer = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: custom * 0.3,
-        duration: 0.8,
-        ease: [0.25, 0.1, 0.25, 1], // cubic-bezier untuk TS
+        delay: custom * 0.5,
+        duration: 1.4,
+        ease: [0.22, 1, 0.36, 1], // cubic-bezier untuk TS
       },
     }),
   };
@@ -39,6 +39,16 @@ const MobileContainer = () => {
     },
   };
 
+   // Variants untuk stripe atas
+  const stripeTopVariant: Variants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.2 },
+    },
+  };
+
   return (
     <div className="w-full min-h-screen flex justify-center bg-[#F6EEE1]">
 
@@ -46,10 +56,15 @@ const MobileContainer = () => {
       max-w-[420px] md:max-w-[520px] lg:max-w-[620px]">
 
         {/* Stripe Atas */}
-        <div className="stripe w-full" />
+           <motion.div
+          className="stripe w-full"
+          initial="hidden"
+          animate="visible"
+          variants={stripeTopVariant}
+        />
 
         {/* Konten Tengah */}
-        <div className="flex flex flex-col items-center justify-center py-10">
+        <div className="flex flex-col items-center justify-center py-14 flex-1">
 
           <div className="text-center">
             <motion.h1
@@ -118,7 +133,7 @@ const MobileContainer = () => {
           animate="visible"
           variants={stripeVariant}
         >
-          <span className="text-[#2E497C] px-4 py-1.5 text-[12px] tracking-[2px] font-breadley">
+          <span className="text-[#2E497C] px-4 py-1.5 text-[12px] md:text-[14px] tracking-[2px] font-breadley font-semibold">
             #AureliaFernandoWedding
           </span>
         </motion.div>
