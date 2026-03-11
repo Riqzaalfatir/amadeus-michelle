@@ -17,22 +17,22 @@ const TerimakasihSection = () => {
       />
 
       {/* CONTAINER */}
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-start md:justify-between">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-start md:justify-center lg:justify-between">
 
         {/* TEXT */}
-        <div className="w-full md:w-[510px] -mr-0 md:-mr-[140px] z-20 md:pt-[60px] translate-y-[94px] md:translate-y-0">
-          <h2 className="text-[#2E497C] text-[28px] font-nephilm uppercase tracking-[1px]">
+        <div className="w-full md:w-[510px] -mr-0 md:-mr-[140px] z-20 md:pt-[40px] lg:pt-[60px] translate-y-[94px] md:translate-y-0">
+          <h2 className="text-[#2E497C] text-[28px] md:text-[38px] lg:text-[28px] font-nephilm uppercase tracking-[1px]">
             Terima Kasih
           </h2>
 
-          <p className="text-[#C75376] text-[14px] font-breadley mt-1 leading-relaxed tracking-[px] md:tracking-[1px] max-w-[220px] md:max-w-[224px]">
+          <p className="text-[#C75376] text-[14px] md:text-[20px] lg:text-[14px] font-breadley mt-1 leading-relaxed tracking-[px] md:tracking-[1px] max-w-[220px] md:max-w-[350px] lg:max-w-[224px]">
             Semoga Anda berkenan untuk hadir dan menikmati rangkaian acara
             pada hari bahagia kami.
           </p>
         </div>
 
         {/* FOTO & FRAME */}
-        <div className="relative w-[480px]  md:w-[370px] h-[210px] md:h-[340px] mt-0 flex justify-center items-center">
+        <div className="relative w-[480px]  md:w-[200px] lg:w-[370px] h-[210px] md:h-[310px] lg:h-[340px] mt-0 flex justify-center items-center  mb-4 md:mb-0">
 
           {/* FRAME */}
           <div className="absolute w-[260px] h-[320px] md:w-[300px] md:h-[380px]">
@@ -45,7 +45,7 @@ const TerimakasihSection = () => {
           </div>
 
           {/* FOTO */}
-          <div className="absolute top-[32px] md:top-[78px] right-[138px] md:-right-[8px] w-[150px] h-[150px] md:w-[170px] md:h-[190px]  overflow-hidden rounded-lg">
+          <div className="absolute top-[32px] md:top-[58px] lg:top-[78px] right-[138px] md:-right-[20px] lg:-right-[8px] w-[150px] h-[150px] md:w-[170px] md:h-[190px]  overflow-hidden rounded-lg">
             <Image
               src={Couple}
               alt="couple"

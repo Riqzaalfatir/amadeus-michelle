@@ -51,7 +51,7 @@ const SaveTheDateSection = () => {
         {/* Title */}
         <motion.h2
           variants={fadeUp}
-          className="text-[#E0A786] text-[18px] uppercase py-[27px] font-nephilm pt-[28px] relaxed tracking-[1px]"
+          className="text-[#E0A786] text-[18px] md:text-[26px] lg:text-[18px] uppercase py-[27px] font-nephilm pt-[28px] relaxed tracking-[1px]"
         >
           Sabtu, 24 Januari 2026
         </motion.h2>
@@ -70,7 +70,7 @@ const SaveTheDateSection = () => {
                 scale: 1.05,
                 transition: { duration: 0.2 },
               }}
-              className="w-[70px] h-[90px] border-2 border-white rounded-lg bg-gray-200 shadow-sm"
+              className="w-[70px] h-[90px] md:w-[100px] md:h-[130px] lg:w-[70px] lg:h-[90px] border-2 border-white rounded-lg bg-gray-200 shadow-sm"
             />
           ))}
         </motion.div>

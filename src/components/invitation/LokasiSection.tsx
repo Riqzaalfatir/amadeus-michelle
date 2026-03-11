@@ -48,7 +48,7 @@ const LokasiSection = () => {
 
         {/* Nama tempat */}
         <motion.h2
-          className="text-[#2E497C] text-[18px] uppercase font-nephilm tracking-[1.5px] leading-none"
+          className="text-[#2E497C] text-[18px] md:text-[26px] lg:text-[18px] uppercase font-nephilm tracking-[1.5px] leading-none"
           variants={fadeUp}
         >
           SUDIRMAN GRAND BALLROOM
@@ -56,7 +56,7 @@ const LokasiSection = () => {
 
         {/* Alamat */}
         <motion.p
-          className="text-[#C75376] pt-2 text-[16px] font-breadley tracking-[0.5px] leading-none"
+          className="text-[#C75376] pt-2 text-[16px] md:text-[20px] lg:text-[16px] font-breadley tracking-[0.5px] leading-none"
           variants={fadeUp}
         >
           Jln. Jendral Sudirman No. 620 Bandung
@@ -64,7 +64,7 @@ const LokasiSection = () => {
 
         {/* Button arah lokasi */}
         <motion.div
-          className="relative inline-block px-10 py-6"
+          className="relative inline-block px-10 py-6 md:px-14 md:py-8 lg:px-10 lg:py-6"
           variants={scaleFade}
         >
           <Image
@@ -74,7 +74,7 @@ const LokasiSection = () => {
             height={90}
             className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 object-contain"
           />
-          <button className="relative text-[#C85375] text-[14px] uppercase font-nephilm tracking-[1px] ">
+          <button className="relative text-[#C85375] text-[14px] md:text-[20px] lg:text-[14px] uppercase font-nephilm tracking-[1px] ">
             ARAHKAN KE LOKASI
           </button>
         </motion.div>
@@ -87,10 +87,10 @@ const LokasiSection = () => {
 
           {/* Pemberkatan */}
           <div className="text-center">
-            <p className="text-[#C85375] text-[14px] font-breadley">
+            <p className="text-[#C85375] text-[14px] md:text-[18px] lg:text-[14px] font-breadley tracking-[1px]">
               PEMBERKATAN
             </p>
-            <p className="text-[#2E497C] text-[21px] font-nephilm ">
+            <p className="text-[#2E497C] text-[21px] md:text-[28px] lg:text-[21px] font-nephilm ">
               15.00 <span className="text-[8px]">WIB</span>
             </p>
           </div>
@@ -100,10 +100,10 @@ const LokasiSection = () => {
 
           {/* Resepsi */}
           <div className="text-center">
-            <p className="text-[#C85375] text-[14px] font-breadley">
+            <p className="text-[#C85375] text-[14px] md:text-[18px] lg:text-[14px]  font-breadley tracking-[1px]">
               RESEPSI
             </p>
-            <p className="text-[#2E497C] text-[21px] font-nephilm ">
+            <p className="text-[#2E497C] text-[21px] md:text-[28px] lg:text-[21px] font-nephilm ">
               18.00 <span className="text-[8px]">WIB</span>
             </p>
           </div>

@@ -10,8 +10,8 @@ const container: Variants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.8, // elemen muncul slow satu per satu
-      delayChildren: 0.6,   // animasi mulai lebih lambat
+      staggerChildren: 0.8,
+      delayChildren: 0.6,
     },
   },
 };
@@ -22,8 +22,8 @@ const fadeUp: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1.8, // lebih lambat
-      ease: [0.22, 1, 0.36, 1], // dreamy cubic-bezier
+      duration: 1.8,
+      ease: [0.22, 1, 0.36, 1],
     },
   },
 };
@@ -38,6 +38,7 @@ const CoupleSection = () => {
         viewport={{ once: true, margin: "-100px" }}
         className="w-full max-w-[439px] px-6 flex flex-col items-center text-center"
       >
+
         {/* Logo */}
         <motion.div variants={fadeUp}>
           <motion.div
@@ -49,7 +50,7 @@ const CoupleSection = () => {
               alt="Aurelia Fernando Logo"
               width={80}
               height={80}
-              className="object-contain pt-[82px]"
+              className="object-contain pt-[82px] md:w-[240px] md:h-[240px] lg:w-[200px] lg:h-[200px]"
             />
           </motion.div>
         </motion.div>
@@ -57,7 +58,7 @@ const CoupleSection = () => {
         {/* Quote */}
         <motion.p
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] pt-[15px] max-w-[260px] font-breadley tracking-[1px] "
+          className="text-[#C75376] text-[16px] md:text-[26px] lg:text-[16px] pt-[15px] max-w-[260px] md:max-w-[350px] lg:max-w-[260px] font-breadley tracking-[1px]"
         >
           Because you have shared in our lives
           by your friendship and love
@@ -65,15 +66,15 @@ const CoupleSection = () => {
 
         {/* Couple Names */}
         <motion.div variants={fadeUp} className="pt-[102px]">
-          <h1 className="font-nephilm  text-[42px] tracking-wide text-[#2E497C]">
+          <h1 className="font-nephilm text-[42px] md:text-[58px] lg:text-[42px] tracking-wide text-[#2E497C]">
             AMADEUS
           </h1>
 
-          <p className="text-[#C85374] font-breadley text-[28px] py-[15px]">
+          <p className="text-[#C85374] font-breadley text-[28px] md:text-[36px] lg:text-[28px] py-[15px]">
             and
           </p>
 
-          <h1 className="font-nephilm  text-[42px] tracking-wide text-[#2E497C]">
+          <h1 className="font-nephilm text-[42px] md:text-[58px] lg:text-[42px] tracking-wide text-[#2E497C]">
             MICHELLE
           </h1>
         </motion.div>
@@ -81,7 +82,7 @@ const CoupleSection = () => {
         {/* Parents Intro */}
         <motion.p
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] font-breadley pt-[100px]"
+          className="text-[#C75376] text-[16px] md:text-[22px] lg:text-[16px] font-breadley pt-[100px]"
         >
           together with their parents
         </motion.p>
@@ -89,7 +90,7 @@ const CoupleSection = () => {
         {/* Parents */}
         <motion.div
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] uppercase font-breadley leading-relaxed pt-[27px] font-semibold tracking-[1px]"
+          className="text-[#C75376] text-[16px] md:text-[22px] lg:text-[16px] uppercase font-breadley leading-relaxed pt-[27px] font-semibold tracking-[1px]"
         >
           <p>MR. JOHANNES ADI PURNAMA PUTRA ST. MT</p>
           <p>& MRS. FANNY KURNIAWATI</p>
@@ -97,7 +98,7 @@ const CoupleSection = () => {
 
         <motion.div
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] uppercase font-breadley leading-relaxed pt-[38px] font-semibold tracking-[1px]"
+          className="text-[#C75376] text-[16px] md:text-[22px] lg:text-[16px] uppercase font-breadley leading-relaxed pt-[38px] font-semibold tracking-[1px]"
         >
           <p>MR. JOHANNES ADI PURNAMA PUTRA ST. MT</p>
           <p>& MRS. FANNY KURNIAWATI</p>
@@ -106,11 +107,12 @@ const CoupleSection = () => {
         {/* Invitation */}
         <motion.p
           variants={fadeUp}
-          className="text-[#C75376] text-[16px] max-w-[300px] leading-relaxed font-breadley py-[72px] tracking-[1px]"
+          className="text-[#C75376] text-[16px] md:text-[20px] lg:text-[16px] max-w-[300px] md:max-w-full lg:max-w-[300px] leading-relaxed font-breadley py-[72px] tracking-[1px]"
         >
           Request the pleasure of your company <br />
           to celebrate the marriage of their children
         </motion.p>
+
       </motion.div>
     </section>
   );

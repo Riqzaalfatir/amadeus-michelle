@@ -57,14 +57,14 @@ const ReservasiSection = () => {
                         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[190px] object-contain"
                     />
 
-                    <h2 className="relative text-[#C85375] uppercase text-[14px] font-nephilm tracking-[2px]" >
+                    <h2 className="relative text-[#C85375] uppercase text-[14px] md:text-[16px] lg:text-[14px] font-nephilm tracking-[2px]" >
                         RESERVATION
                     </h2>
                 </motion.div>
 
                 {/* Guest Name */}
                 <motion.h3
-                  className="text-[#2E497C] text-[18px] font-nephilm uppercase pt-[50px] tracking-[1.5px]"
+                  className="text-[#2E497C] text-[18px] md:text-[23px] lg:text-[18px] font-nephilm uppercase pt-[50px] tracking-[1.5px]"
                   variants={fadeUp}
                 >
                     Guest Name & Fam
@@ -72,7 +72,7 @@ const ReservasiSection = () => {
 
                 {/* Description */}
                 <motion.p
-                  className="text-[#C75376] text-[15px] md:text-[16px] font-breadley pt-[11px] tracking-[1px]"
+                  className="text-[#C75376] text-[15px] md:text-[20px] lg:text-[16px] max-w-md mx-auto font-breadley pt-[11px] tracking-[1px]"
                   variants={fadeUp}
                 >
                     Mohon konfirmasi kehadiran Bapak/Ibu di acara
@@ -81,14 +81,14 @@ const ReservasiSection = () => {
 
                 {/* RSVP Buttons */}
                 <motion.div className="flex justify-center gap-6 mt-[40px]" variants={fadeUp}>
-                    <button className="bg-white text-[#E0A786] px-8 py-2 rounded-lg text-[14px] font-breadley tracking-[1px] shadow-sm
+                    <button className="bg-white text-[#E0A786] px-8 py-2 rounded-lg text-[14px] md:text-[18px] lg:text-[14px] font-breadley tracking-[1px] shadow-sm
     transition-all duration-300 ease-out
     hover:bg-[#E0A786] hover:text-white hover:shadow-lg hover:scale-105
     active:scale-95">
                         Hadir
                     </button>
 
-                    <button className="bg-white text-[#E0A786] px-8 py-2 rounded-lg text-[14px] font-breadley tracking-[1px] shadow-sm
+                    <button className="bg-white text-[#E0A786] px-8 py-2 rounded-lg text-[14px] md:text-[18px] lg:text-[14px] font-breadley tracking-[1px] shadow-sm
     transition-all duration-300 ease-out
     hover:bg-[#E0A786] hover:text-white hover:shadow-lg hover:scale-105
     active:scale-95">
@@ -98,14 +98,14 @@ const ReservasiSection = () => {
 
                 {/* Help */}
                 <motion.p
-                  className="text-[#C75376] text-[16px] font-breadley uppercase pt-[35px] leading-none"
+                  className="text-[#C75376] text-[16px] md:text-[22px] lg:text-[16px] font-breadley uppercase pt-[35px] leading-none tracking-[1px]"
                   variants={fadeUp}
                 >
                     PERLU BANTUAN?
                 </motion.p>
 
                 <motion.button
-                  className="bg-white text-[#E0A786] px-8 py-2 rounded-lg text-[14px] font-breadley mt-[15px] tracking-[1px] shadow-sm
+                  className="bg-white text-[#E0A786] px-8 py-2 rounded-lg text-[14px] md:text-[18px] lg:text-[14px] font-breadley mt-[15px] tracking-[1px] shadow-sm
 transition-all duration-300 ease-out
 hover:bg-[#E0A786] hover:text-white hover:shadow-lg hover:scale-105
 active:scale-95"

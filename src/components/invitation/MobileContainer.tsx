@@ -53,7 +53,7 @@ const MobileContainer = () => {
     <div className="w-full min-h-screen flex justify-center bg-[#F6EEE1]">
 
       <div className="w-full flex flex-col items-center
-      max-w-[420px] md:max-w-[520px] lg:max-w-[620px]">
+      max-w-[420px] md:max-w-none lg:max-w-[620px]">
 
         {/* Stripe Atas */}
            <motion.div
@@ -68,7 +68,7 @@ const MobileContainer = () => {
 
           <div className="text-center">
             <motion.h1
-              className="font-nephilm text-[48px] tracking-wide text-[#2E497C]"
+              className="font-nephilm text-[48px] md:text-[64px] lg:text-[48px] tracking-wide text-[#2E497C]"
               custom={0}
               initial="hidden"
               animate="visible"
@@ -78,7 +78,7 @@ const MobileContainer = () => {
             </motion.h1>
 
             <motion.p
-              className="text-[#E0A786] font-breadley text-[31px]"
+              className="text-[#E0A786] font-breadley text-[31px] md:text-[42px] lg:text-[31px]"
               custom={1}
               initial="hidden"
               animate="visible"
@@ -88,7 +88,7 @@ const MobileContainer = () => {
             </motion.p>
 
             <motion.h1
-              className="font-nephilm text-[48px] tracking-wide text-[#2E497C]"
+              className="font-nephilm text-[48px] md:text-[64px] lg:text-[48px] tracking-wide text-[#2E497C]"
               custom={2}
               initial="hidden"
               animate="visible"
@@ -109,13 +109,13 @@ const MobileContainer = () => {
               alt="Hero"
               width={300}
               height={300}
-              className="object-contain w-[260px] md:w-[420px] lg:w-[340px]"
+              className="object-contain w-[260px] md:w-[520px] lg:w-[340px]"
               priority
             />
           </motion.div>
 
           <motion.div
-            className="mt-[12px] font-breadley text-[21px] tracking-[3px] text-[#c79a73]"
+            className="mt-[12px] font-breadley text-[21px] md:text-[28px] lg:text-[21px] tracking-[3px] text-[#c79a73]"
             custom={3}
             initial="hidden"
             animate="visible"
@@ -133,7 +133,7 @@ const MobileContainer = () => {
           animate="visible"
           variants={stripeVariant}
         >
-          <span className="text-[#2E497C] px-4 py-1.5 text-[12px] md:text-[14px] tracking-[2px] font-breadley font-semibold">
+          <span className="text-[#2E497C] px-4 py-1.5 text-[12px] md:text-[18px] lg:text-[14px] tracking-[2px] font-breadley font-semibold">
             #AureliaFernandoWedding
           </span>
         </motion.div>
