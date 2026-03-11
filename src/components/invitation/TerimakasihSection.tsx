@@ -57,7 +57,6 @@ const TerimakasihSection = () => {
   return (
     <section className="relative w-full bg-[#F6EEE1] overflow-hidden">
 
-      {/* ORNAMENT */}
       <motion.div
         animate={{ y: [0, -8, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -71,7 +70,6 @@ const TerimakasihSection = () => {
         />
       </motion.div>
 
-      {/* CONTAINER */}
       <motion.div
         className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-start md:justify-center lg:justify-between"
         variants={container}
@@ -80,7 +78,6 @@ const TerimakasihSection = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
 
-        {/* TEXT */}
         <motion.div
           className="w-full md:w-[510px] -mr-0 md:-mr-[140px] z-20 md:pt-[40px] lg:pt-[60px] translate-y-[90px] md:translate-y-0 mb-4 md:mb-0"
         >
@@ -94,10 +91,8 @@ const TerimakasihSection = () => {
           </p>
         </motion.div>
 
-        {/* FOTO & FRAME */}
         <div className="relative w-[480px] md:w-[200px] lg:w-[370px] h-[210px] md:h-[310px] lg:h-[340px] mt-0 flex justify-center items-center mb-4 md:mb-0">
 
-          {/* FRAME */}
           <motion.div
             variants={scaleFade}
             className="absolute w-[260px] h-[320px] md:w-[300px] md:h-[380px]"
@@ -110,7 +105,6 @@ const TerimakasihSection = () => {
             />
           </motion.div>
 
-          {/* FOTO */}
           <motion.div
             variants={photoReveal}
             className="absolute top-[32px] md:top-[58px] lg:top-[78px] right-[138px] md:-right-[20px] lg:-right-[8px] w-[150px] h-[150px] md:w-[170px] md:h-[190px] overflow-hidden rounded-lg"

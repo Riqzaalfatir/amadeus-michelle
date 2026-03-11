@@ -8,8 +8,8 @@ const container: Variants = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.6, // delay tiap elemen agar slow
-      delayChildren: 0.5,   // mulai animasi sedikit terlambat
+      staggerChildren: 0.6,
+      delayChildren: 0.5,
     },
   },
 };
@@ -20,8 +20,8 @@ const fadeUp: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1.5, // slow & smooth
-      ease: [0.22, 1, 0.36, 1], // dreamy cubic-bezier
+      duration: 1.5,
+      ease: [0.22, 1, 0.36, 1],
     },
   },
 };
@@ -46,7 +46,6 @@ const LokasiSection = () => {
         viewport={{ once: true, margin: "-100px" }}
       >
 
-        {/* Nama tempat */}
         <motion.h2
           className="text-[#2E497C] text-[18px] md:text-[26px] lg:text-[18px] uppercase font-nephilm tracking-[1.5px] leading-none"
           variants={fadeUp}
@@ -54,7 +53,6 @@ const LokasiSection = () => {
           SUDIRMAN GRAND BALLROOM
         </motion.h2>
 
-        {/* Alamat */}
         <motion.p
           className="text-[#C75376] pt-2 text-[16px] md:text-[20px] lg:text-[16px] font-breadley tracking-[0.5px] leading-none"
           variants={fadeUp}
@@ -62,7 +60,6 @@ const LokasiSection = () => {
           Jln. Jendral Sudirman No. 620 Bandung
         </motion.p>
 
-        {/* Button arah lokasi */}
         <motion.div
           className="relative inline-block px-10 py-6 md:px-14 md:py-8 lg:px-10 lg:py-6"
           variants={scaleFade}
@@ -74,18 +71,22 @@ const LokasiSection = () => {
             height={90}
             className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 object-contain"
           />
-          <button className="relative text-[#C85375] text-[14px] md:text-[20px] lg:text-[14px] uppercase font-nephilm tracking-[1px] ">
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Sudirman+Grand+Ballroom+Bandung"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative text-[#C85375] text-[14px] md:text-[20px] lg:text-[14px] uppercase font-nephilm tracking-[1px]"
+          >
             ARAHKAN KE LOKASI
-          </button>
+          </a>
         </motion.div>
 
-        {/* Waktu acara */}
         <motion.div
           className="flex justify-center items-center gap-10 md:gap-16 pt-[20px]"
           variants={fadeUp}
         >
 
-          {/* Pemberkatan */}
           <div className="text-center">
             <p className="text-[#C85375] text-[14px] md:text-[18px] lg:text-[14px] font-breadley tracking-[1px]">
               PEMBERKATAN
@@ -95,10 +96,8 @@ const LokasiSection = () => {
             </p>
           </div>
 
-          {/* Divider */}
           <div className="w-[1.5px] h-12 bg-[#C75375]"></div>
 
-          {/* Resepsi */}
           <div className="text-center">
             <p className="text-[#C85375] text-[14px] md:text-[18px] lg:text-[14px]  font-breadley tracking-[1px]">
               RESEPSI

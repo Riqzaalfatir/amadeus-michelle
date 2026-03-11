@@ -5,7 +5,6 @@ import Image from "next/image";
 import HeroKanan from "@/assets/HeroKanan.png";
 
 const MobileContainer = () => {
-  // Variants untuk animasi teks
   const textVariant: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: (custom: number) => ({
@@ -14,12 +13,11 @@ const MobileContainer = () => {
       transition: {
         delay: custom * 0.7,
         duration: 2,
-        ease: [0.22, 1, 0.36, 1], // cubic-bezier untuk TS
+        ease: [0.22, 1, 0.36, 1],
       },
     }),
   };
 
-  // Variants untuk animasi gambar
   const imageVariant: Variants = {
     hidden: { opacity: 0, scale: 1.5 },
     visible: {
@@ -29,7 +27,6 @@ const MobileContainer = () => {
     },
   };
 
-  // Variants untuk stripe bawah
   const stripeVariant: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -39,7 +36,6 @@ const MobileContainer = () => {
     },
   };
 
-   // Variants untuk stripe atas
   const stripeTopVariant: Variants = {
     hidden: { opacity: 0, y: -20 },
     visible: {
@@ -55,15 +51,13 @@ const MobileContainer = () => {
       <div className="w-full flex flex-col items-center
       max-w-[420px] md:max-w-none lg:max-w-[620px]">
 
-        {/* Stripe Atas */}
-           <motion.div
+        <motion.div
           className="stripe w-full"
           initial="hidden"
           animate="visible"
           variants={stripeTopVariant}
         />
 
-        {/* Konten Tengah */}
         <div className="flex flex-col items-center justify-center py-14 flex-1">
 
           <div className="text-center">
@@ -126,7 +120,6 @@ const MobileContainer = () => {
 
         </div>
 
-        {/* Stripe Bawah */}
         <motion.div
           className="stripe w-full flex items-center justify-center"
           initial="hidden"

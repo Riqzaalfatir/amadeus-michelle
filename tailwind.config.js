@@ -9,9 +9,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-  nephilm: ["Nephilm", "serif"],
-  breadley: ["BreadleySans", "sans-serif"],
-}
+        nephilm: ["Nephilm", "serif"],
+        breadley: ["BreadleySans", "sans-serif"],
+      }
     },
   },
   plugins: [],

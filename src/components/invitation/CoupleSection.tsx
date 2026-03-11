@@ -4,8 +4,6 @@ import Image from "next/image";
 import AFLogo from "@/assets/AF.png";
 import { motion, Variants } from "framer-motion";
 
-/* Animation */
-
 const container: Variants = {
   hidden: {},
   show: {
@@ -39,7 +37,6 @@ const CoupleSection = () => {
         className="w-full max-w-[439px] px-6 flex flex-col items-center text-center"
       >
 
-        {/* Logo */}
         <motion.div variants={fadeUp}>
           <motion.div
             animate={{ y: [0, -6, 0] }}
@@ -55,7 +52,6 @@ const CoupleSection = () => {
           </motion.div>
         </motion.div>
 
-        {/* Quote */}
         <motion.p
           variants={fadeUp}
           className="text-[#C75376] text-[16px] md:text-[26px] lg:text-[16px] pt-[15px] max-w-[260px] md:max-w-[350px] lg:max-w-[260px] font-breadley tracking-[1px]"
@@ -64,7 +60,6 @@ const CoupleSection = () => {
           by your friendship and love
         </motion.p>
 
-        {/* Couple Names */}
         <motion.div variants={fadeUp} className="pt-[102px]">
           <h1 className="font-nephilm text-[42px] md:text-[58px] lg:text-[42px] tracking-wide text-[#2E497C]">
             AMADEUS
@@ -79,7 +74,6 @@ const CoupleSection = () => {
           </h1>
         </motion.div>
 
-        {/* Parents Intro */}
         <motion.p
           variants={fadeUp}
           className="text-[#C75376] text-[16px] md:text-[22px] lg:text-[16px] font-breadley pt-[100px]"
@@ -87,7 +81,6 @@ const CoupleSection = () => {
           together with their parents
         </motion.p>
 
-        {/* Parents */}
         <motion.div
           variants={fadeUp}
           className="text-[#C75376] text-[16px] md:text-[22px] lg:text-[16px] uppercase font-breadley leading-relaxed pt-[27px] font-semibold tracking-[1px]"
@@ -104,7 +97,6 @@ const CoupleSection = () => {
           <p>& MRS. FANNY KURNIAWATI</p>
         </motion.div>
 
-        {/* Invitation */}
         <motion.p
           variants={fadeUp}
           className="text-[#C75376] text-[16px] md:text-[20px] lg:text-[16px] max-w-[300px] md:max-w-full lg:max-w-[300px] leading-relaxed font-breadley py-[72px] tracking-[1px]"
