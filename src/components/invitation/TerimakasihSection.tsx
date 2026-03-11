@@ -102,6 +102,7 @@ const TerimakasihSection = () => {
               alt="frame"
               fill
               className="object-contain"
+              onContextMenu={(e) => e.preventDefault()}
             />
           </motion.div>
 
@@ -114,6 +115,7 @@ const TerimakasihSection = () => {
               alt="couple"
               fill
               className="object-cover"
+              onContextMenu={(e) => e.preventDefault()}
             />
           </motion.div>
 

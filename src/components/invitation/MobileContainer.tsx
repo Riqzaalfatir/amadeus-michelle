@@ -103,8 +103,9 @@ const MobileContainer = () => {
               alt="Hero"
               width={300}
               height={300}
-              className="object-contain w-[260px] md:w-[520px] lg:w-[340px]"
+              className="object-contain w-[300px] md:w-[560px] lg:w-[380px]"
               priority
+              onContextMenu={(e) => e.preventDefault()}
             />
           </motion.div>
 
